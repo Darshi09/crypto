@@ -11,43 +11,46 @@
             padding: 0;
             box-sizing: border-box;
         }
-        header{
+        .header{
             background-color: #fff;
             color: #000;
-            padding: 20px 30px;
+            padding: 10px 20px;
             position: sticky;
-            top: 10px;
+            top: 0px;
+            z-index: 10;
         }
+        
         nav{
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding-left: 250px;
+            padding-left: 150px;
         }
         h1{
             font-size: 30px;
             cursor: pointer;
             font-weight: 700;
         }
-        ul{
+        .header ul{
             list-style: none;
             display: flex;
-            padding-right: 150px;
+            padding-right: 100px;
             position: relative;
             align-items: center;
         }
-        li a{
+        .header li a{
             margin-right: 10px;
             color: #000;
             text-decoration: none;
             font-size: 20px;
-            padding: 30px;
+            padding: 20px;
             padding-top: 10px;
         }
         button{
             padding: 10px 20px;
             background-color: #8364e2;
             color: #fff;
+            font-weight: 900;
             border: none;
             border-radius: 50px;
             cursor: pointer;
@@ -65,7 +68,7 @@
         .content{
             width: 50%;
         }
-        img{
+        .img{
             width: 50%;
             height: auto;
             border-radius: 50px;
@@ -95,26 +98,30 @@
         .topic hr{
             width: 150px;
             background-color: #000;
-            margin-left: 690px;
+            margin-left: 700px;
+            height: 3px;
+        }
+        .section-2 .topic hr{
+            width: 150px;
+            background-color: #000;
+            margin-left: 900px;
             height: 3px;
         }
         .box{
-            width: 300px;
-            height: 250px;
+            width: 250px;
+            height: 300px;
             background-color: #fff;
             border-radius: 10px;
-            border: 1px solid #000;
+           box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
             margin: 20px;
             display: flex;
             flex-direction: column;
-            /* justify-content: center;
-            align-items: center; */
         }
         .box i{
             font-size: 50px;
             color: #8364e2;
             padding-left: 10px;
-            margin: 10px;
+            margin: 20px;
         }
         .box h3{
             font-size: 30px;
@@ -125,10 +132,6 @@
             font-size: 20px;
             color: #808080;
             margin: 10px;
-        }
-        .section-2{
-            padding: 50px 150px;
-            padding-left: 250px;
         }
         .section-2 h1{
             font-size: 50px;
@@ -143,6 +146,7 @@
             flex-wrap: wrap;
             justify-content: center;
             align-items: center;
+            margin: 0 300px;
         }
         .section-3{
             padding: 50px 150px;
@@ -151,12 +155,20 @@
         .section-3 h1{
             font-size: 50px;
             color: #000;
+            padding: 20px;
+        }
+        .about_1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 150px;
         }
         .about p{
             font-size: 20px;
             color: #000;
-            margin: 10px;
+            margin: 30px;
             cursor: pointer;
+            font-weight: 900;
             padding: 10px;
         }
         .hover{
@@ -167,21 +179,485 @@
             padding: 10px;
         }
         .des{
-            padding: 50px 150px;
-            padding-left: 250px;
+            padding: 30px 10px;
             display: flex;
+            margin-right: 150px;
         }
         .des p{
             font-size: 20px;
             color: #808080;
+            margin: 3px;
+        }
+        .section-4{
+            padding: 50px 150px;
+            padding-left: 250px;
+        }
+        .section-4 h1{
+            font-size: 50px;
+            color: #000;
+            padding: 20px;
+        }
+        .traders{
+            width: 350px;
+            height: 700px;
+            border: 1px solid #808080;
+            border-radius: 20px;
+            overflow: hidden;
+            text-align: center;
             margin: 10px;
-            align-items: flex-start;
+        }
+        .traders img{
+            width: 100%;
+            height: 70%;
+        }
+        .traders h2{
+            font-size: 30px;
+            margin: 5px;
+        }
+        .traders h6{
+            font-size: 15px;
+            font-weight: 900;
+            margin: 5px;
+        }
+        .traders p{
+            font-size: 19px;
+            color: #808080;
+            margin: 15px;
+        }
+        .traders i{
+            font-size: 40px;
+            margin: 10px;
+            background-color: #fff;
+            color: #403f83;
+            margin: 5px;
+        }
+        .traders i:hover{
+            background-color: #403f83;
+            color: #fff;
+        }
+        .traders_2{
+            display: flex;
+        }
+        .section-5{
+            padding: 50px 150px;
+            padding-left: 250px;
+        }
+        .section-5 h1{
+            font-size: 50px;
+            color: #000;
+            padding: 20px;
+        }
+        .div-1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .div-2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .skils{
+            width: 100%;
+            height: 100%;
+            display: inline-block;
+            margin: 30px;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .skils p{
+            font-weight: 900;
+            font-size: 30px;
+        }
+        .skils .grey{
+            width: 250px;
+            height: 7px;
+            background-color:lightgrey;
+            border-radius: 10px;
+            margin: 10px;
+        }
+        .grey .progress{
+            height:100%;
+            /* width:95%; */
+            background-color: #403f83;
+            border-radius: 10px;
+        }
+        .section-6{
+            padding: 50px 150px;
+            padding-left: 250px;
+        }
+        .section-6 h1{
+            font-size: 50px;
+            color: #000;
+            padding: 20px;
+        }
+        .plan{
+            width: 320px;
+            height: 750px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            text-align: center;
+            border-radius: 20px;
+            margin: 10px;
+            display: inline-block;
+            justify-content: space-between;
+            align-items: center;
+            margin-left: 100px;
+        }
+        .plan h2{
+            font-size: 50px;
+            padding-top: 20px;
+        }
+        .plan p{
+            font-size: 20px;
+            padding: 10px;
+        }
+        .container{
+            height: 200px;
+            width: 100%;
+            color: #fff;
+            background-color: #403f83;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+        }
+        .container p{
+            font-size: 30px;
+        }
+        .container span{
+            font-size: 90px;
+        }
+        .plan ul li{
+            list-style: none;
+            text-align: left !important;
+            padding: 20px 50px;
+            font-size: 20px;
+        }
+        .plan ul li::before{
+            content: "✔";
+            color: #403f83;
+            padding: 10px;
+        }
+        .plan button{
+            text-align: center;
+            margin: 20px;
+        }
+        .section-7{
+            padding: 50px 150px;
+            padding-left: 250px;
+        }
+        .section-7 h1{
+            font-size: 50px;
+            color: #000;
+            padding: 20px;
+        }
+        .top{
+            display: flex;
+            position: absolute;
+            flex-wrap: wrap;
+            /* justify-content: center; */
+        }
+        .item {
+            width: 350px;
+            padding: 15px;
+            /* margin-bottom: 20px; */
+            border-radius: 5px;
+            display: flex;
+            position: relative;
+        }
+        .item .num{
+            margin-top: 0;
+            display: flex;
+            padding: 10px;
+        }
+        /* .item img{
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+            border: 1px solid #403f83;
+           background-color: #403f83;
+        }
+        .item img i{
+            position: relative;
+            bottom: 0;
+            right: 0;
+        }
+        .item img:hover{
+           border: 1px solid #403f83;
+           background-color: #403f83;
+           width: 65px;
+            height: 65px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+            transition: all 1s ease-in-out;
+
+        } */
+        .img-hover{
+            width: 100px;
+            height: 100px;
+            background-color: #8463e2;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+}
+.img-child{
+    width: 100px;
+    height: 100px;
+    background-color: #8463e2;
+    border-radius: 50%;
+    background-size: cover;
+    transition-property: width,height,border-radius;
+    
+}
+.img-child:hover{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    transition: all 0.5s ease-in-out;
+}
+.img-child i{
+    font-size: 25px;
+    color: #8463e2;
+    position: absolute;
+    top: 70px;
+    left: 80px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+        .item h3{
+            font-size: 20px;
+            padding: 10px;
+        }
+        .item p{
+            font-size: 15px;
+            color: #808080;
+            padding: 10px;
+        }
+        .section-8{
+            margin-top: 400px;
+            width: 100%;
+            height: 900px;
+            background-color: #f7f4fd;
+        }
+        .section-8 h1{
+            font-size: 70px;
+            color: #000;
+            padding: 20px;
+        }
+        .view{
+            text-align: center;
+            color: #808080;
+            font-size: 20px;
+        }
+        .card{
+            display: block;
+            justify-content: center;
+            margin: auto;
+            width: 1000px;
+            height: 700px;
+            position: relative;
+        }
+        .card img{
+            width: 100%;
+            height: 100%;
+            border-radius: 50px;
+            padding: 20px;
+            object-fit: cover;
+           /* z-index: -10; */
+        }
+        .card i{
+            color: #fff;
+            font-size: 50px;
+            position: absolute;
+            left: 50%;
+            top: 50%; 
+        }
+        .card i:hover{
+            color: #8463e2;
+        }
+        .section-9{
+            padding: 50px 150px;
+            padding-left: 250px;
+        }
+        .section-9 h1{
+            font-size: 50px;
+            color: #000;
+            padding: 20px;
+        }
+        .box-5{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin: 10px;
+        }
+        .box-border{
+            width: 300px;
+            height: 500px;
+            border: 1px solid #ccc;
+            border-radius: 50px;
+            position: relative;
+        }
+        .article{
+            width: 300px;
+            height: 350px;
+            padding: 20px;
+        }
+        .article .img5{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -2;
+            border-radius: 50px;
+        }
+        .how{
+            transform: translateY(-320%);
+        }
+        .art{
+            margin: 20px;
+        }
+        .art h3{
+            font-size: 30px;
+            color: #000;
+            margin: 10px;
+        }
+        .art p{
+            font-size: 20px;
+            color: #808080;
+            margin: 10px;
+        }
+        .art a{
+            font-size: 25px;
+            color: #8364e2;
+            margin: 10px;
+            text-decoration: none;
+            font-weight: 700;
+        }
+        .section-10{
+            padding: 50px 150px;
+            padding-left: 250px;
+        }
+        .section-10 h1{
+            font-size: 50px;
+            color: #000;
+            padding: 20px;
+        }
+        .clients_2{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 50px 0;
+        }
+        .cli{
+            width: 200px;
+            height: 200px;
+            background-color: #f2effc;
+            border-radius: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 20px;
+        }
+        .cli img{
+            width: 150px;
+            border-radius: 50%;
+        }
+        .cli:hover{
+            border: 1px solid lightgrey;
+            background-color: transparent;
+        }
+        .section-11{
+            padding: 50px 150px;
+            padding-left: 250px;
+        }
+        .hold{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 100px;
+        }
+        .hold-2{
+            margin-left: 250px;
+        }
+        .hold-2 h2{
+            font-size: 50px;
+            color: #000;
+            margin-bottom: 15px;
+        }
+        .hold-2 p{
+            font-size: 20px;
+            color: #808080;
+        }
+        .hold-3{
+            background-color: rgba(211, 211, 211, 0.493);
+            margin-right: 250px;
+            height: 400px;
+            padding: 10px;
+            border-radius: 20px;
+        }
+        .hold-3 h3{
+            font-size: 30px;
+            color: #000;
+            padding: 20px;
             
         }
+        .hold-3 p{
+            font-size: 20px;
+            color: #808080;
+            padding: 10px;
+        }
+        input,textarea{
+            width: 300px;
+            padding: 10px;
+            margin: 10px;
+            display: block;
+            border: 1px solid #ccc;
+            font-size: 15px;
+            margin-bottom: 20px;
+        }
+        .hold-3 button{
+            margin: 10px;
+        }
+        .section-12{
+           margin-top: 80px;
+        }
+        .section-12 iframe{
+            width: 100%;
+            height: 600px;
+        }
+        .footer{
+            width: 100%;
+            height:  150px;
+            display: flex;
+            background-color: #fff;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .footer h2{
+            font-size: 40px;
+            color: #000;
+            margin-left: 300px;
+        }
+        .footer p{
+            font-size: 15px;
+            color: #000;
+            margin-left: 20px;
+        }
+        .footer .social{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-right: 300px;
+        }
+        .social i{
+            color: #403f83;
+            font-size: 35px;
+            margin: 10px;
+        }
     </style>
-</head>
 <body>
-    <header>
+    <header class="header">
         <nav>
             <h1>CryptoM5</h1>
             <ul>
@@ -200,7 +676,7 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incididunt labore dolore magna aliqua.</p>
             <button>Get Started</button>
         </div>
-        <img src="1.jpg" alt="">
+        <img src="1.jpg" alt="" class="img">
     </section>
     <section class="section-2">
         <div class="topic">
@@ -255,14 +731,468 @@
         <div class="topic">
             <h1>About Us</h1>
         </div>
-        <div class="about">
-            <p class="hover">Wallets</p>
-            <p>trade</p>
+        <div class="about_1">
+            <div class="about">
+                <p class="hover">Wallets</p>
+                <p>trade</p>
+                <p>Exchange</p>
+            </div>
+            <div class="des">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut placerat felis. Etiam nec rhoncus purus, a sollicitudin turpis. Pellentesque sit amet justo purus. Cras ac interdum dui. Mauris placerat non metus eu venenatis. Nam eget ornare lorem, quis pulvinar lacus. Etiam mauris lorem, molestie eu sapien sed, suscipit faucibus nisi. Proin lobortis blandit mauris, sit amet tempus felis finibus fringilla. Phasellus mattis consectetur sagittis. Aenean bibendum scelerisque nulla in consequat. Nam sed lobortis velit, non porta sem. Vestibulum pharetra, lorem et malesuada volutpat, leo augue rhoncus dui, et auctor dolor arcu non ligula.</p>
+            </div>
+        </div>
+    </section>
+    <section class="section-4">
+        <div class="topic">
+            <h1>Our Traders</h1>
+        </div>
+        <div class="traders_2">
+            <div class="traders">
+                <img src="https://mobirise.com/extensions/cryptom5/trade-agency/assets/images/team1.jpg" alt="">
+                <h2>John Smith</h2>
+                <h6>TRADER</h6>
+                <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</P>
+                <i class="fa-brands fa-square-facebook"></i>
+                <i class="fa-brands fa-square-twitter"></i>
+                <i class="fa-brands fa-square-instagram"></i>
+            </div>
+            <div class="traders">
+                <img src="https://mobirise.com/extensions/cryptom5/trade-agency/assets/images/team2.jpg" alt="">
+                <h2>Sarah Palmer</h2>
+                <h6>TRADER</h6>
+                <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</P>
+                <i class="fa-brands fa-square-facebook"></i>
+                <i class="fa-brands fa-square-twitter"></i>
+                <i class="fa-brands fa-square-instagram"></i>
+            </div>
+            <div class="traders">
+                <img src="https://mobirise.com/extensions/cryptom5/trade-agency/assets/images/team3.jpg" alt="">
+                <h2>Adam Swift</h2>
+                <h6>TRADER</h6>
+                <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</P>
+                <i class="fa-brands fa-square-facebook"></i>
+                <i class="fa-brands fa-square-twitter"></i>
+                <i class="fa-brands fa-square-instagram"></i>
+            </div>
+            <div class="traders">
+                <img src="https://mobirise.com/extensions/cryptom5/trade-agency/assets/images/team4.jpg" alt="">
+                <h2>Helen Smith</h2>
+                <h6>TRADER</h6>
+                <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</P>
+                <i class="fa-brands fa-square-facebook"></i>
+                <i class="fa-brands fa-square-twitter"></i>
+                <i class="fa-brands fa-square-instagram"></i>
+            </div>
+        </div>
+    </section>
+    <section class="section-5">
+        <div class="topic">
+            <h1>Our Skills</h1>
+        </div>
+       <div class="div-1">
+        <div class="skils">
+            <p>Analysis</p>
+            <div class="grey">
+                <div class="progress" style="width: 90%;"></div>
+              </div>
+        </div>
+        <div class="skils">
             <p>Exchange</p>
+            <div class="grey">
+                <div class="progress" style="width: 55%;"></div>
+              </div>
         </div>
-        <div class="des">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut placerat felis. Etiam nec rhoncus purus, a sollicitudin turpis. Pellentesque sit amet justo purus. Cras ac interdum dui. Mauris placerat non metus eu venenatis. Nam eget ornare lorem, quis pulvinar lacus. Etiam mauris lorem, molestie eu sapien sed, suscipit faucibus nisi. Proin lobortis blandit mauris, sit amet tempus felis finibus fringilla. Phasellus mattis consectetur sagittis. Aenean bibendum scelerisque nulla in consequat. Nam sed lobortis velit, non porta sem. Vestibulum pharetra, lorem et malesuada volutpat, leo augue rhoncus dui, et auctor dolor arcu non ligula.</p>
+        <div class="skils">
+            <p>Marketing</p>
+            <div class="grey">
+                <div class="progress" style="width: 85%;"></div>
+              </div>
         </div>
-        </section>
+       </div>
+       <div class="div-2">
+        <div class="skils">
+            <p>Trade</p>
+            <div class="grey">
+                <div class="progress" style="width: 75%;"></div>
+              </div>
+        </div>
+        <div class="skils">
+            <p>Processing</p>
+            <div class="grey">
+                <div class="progress" style="width: 65%;"></div>
+              </div>
+        </div>
+        <div class="skils">
+            <p>Margin Trade</p>
+            <div class="grey">
+                <div class="progress" style="width: 70%;"></div>
+              </div>
+        </div>
+       </div>
+    </section>
+    <section class="section-6">
+        <div class="topic">
+            <h1>Pricing Plan</h1>
+        </div>
+        <div class="plan">
+            <h2>Free</h2>
+            <p>Lorem ipsum dolor</p>
+            <div class="container">
+                <p>$ <span>0</span>p/mo</p>
+            </div>
+            <ul>
+                <li>Wallets</li>
+                <li>Trade</li>
+                <li>Exchange</li>    
+                <li>Processing</li>
+                <li>Analysis</li>
+            </ul>
+            <button>Get Stared</button>
+        </div>
+        <div class="plan">
+            <h2>Free</h2>
+            <p>Lorem ipsum dolor</p>
+            <div class="container">
+                <p>$ <span>0</span>p/mo</p>
+            </div>
+            <ul>
+                <li>Wallets</li>
+                <li>Trade</li>
+                <li>Exchange</li>    
+                <li>Processing</li>
+                <li>Analysis</li>
+            </ul>
+            <button>Get Stared</button>
+        </div>
+        <div class="plan">
+            <h2>Free</h2>
+            <p>Lorem ipsum dolor</p>
+            <div class="container">
+                <p>$ <span>0</span>p/mo</p>
+            </div>
+            <ul>
+                <li>Wallets</li>
+                <li>Trade</li>
+                <li>Exchange</li>    
+                <li>Processing</li>
+                <li>Analysis</li>
+            </ul>
+            <button>Get Stared</button>
+        </div>
+    </section>
+    <section class="section-7">
+        <div class="topic">
+            <h1>Top Traders</h1>
+        </div>
+        <div class="top">
+            <div class="item">
+                    <div class="num">1</div>
+                        <div class="img-hover">
+                            <div class="img-child">
+                                <img src="https://mobirise.com/extensions/cryptom5/trade-agency/assets/images/face1.jpg" alt="" width="100%" height="100%" style="border-radius: 50%;">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
+                            
+                        </div>
+                    <div class="contant">
+                        <h3>Nicholas Daniels</h3>
+                        <p>3.5 BTC</p>
+                    </div>
+            </div>
+            <div class="item">
+                <div class="num">5</div>
+                <div class="img-hover">
+                    <div class="img-child">
+                        <img src="https://mobirise.com/extensions/cryptom5/trade-agency/assets/images/face1.jpg" alt="" width="100%" height="100%" style="border-radius: 50%;">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                </div>
+                <div class="contant">
+                    <h3>Nicholas Daniels</h3>
+                    <p>3.0 BTC</p>
+                </div>
+        </div>
+        <div class="item">
+            <div class="num">9</div>
+            <div class="img-hover">
+                <div class="img-child">
+                    <img src="https://mobirise.com/extensions/cryptom5/trade-agency/assets/images/face1.jpg" alt="" width="100%" height="100%" style="border-radius: 50%;">
+                    <i class="fa-solid fa-circle-check"></i>
+                </div>
+            </div>
+            <div class="contant">
+                <h3>Nicholas Daniels</h3>
+                <p>2.2 BTC</p>
+            </div>
+    </div>
+            <div class="item">
+                <div class="num">2</div>
+                <div class="img-hover">
+                    <div class="img-child">
+                        <img src="https://mobirise.com/extensions/cryptom5/trade-agency/assets/images/face2.jpg" alt="" width="100%" height="100%" style="border-radius: 50%;">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                </div>
+                <div class="contant">
+                    <h3>Claude Banks</h3>
+                    <p>3.3 BTC</p>
+                </div>
+        </div>
+        <div class="item">
+            <div class="num">6</div>
+            <div class="img-hover">
+                <div class="img-child">
+                    <img src="https://mobirise.com/extensions/cryptom5/trade-agency/assets/images/face2.jpg" alt="" width="100%" height="100%" style="border-radius: 50%;">
+                    <i class="fa-solid fa-circle-check"></i>
+                </div>
+            </div>
+            <div class="contant">
+                <h3>Claude Banks</h3>
+                <p>2.6 BTC</p>
+            </div>
+    </div>
+    <div class="item">
+        <div class="num">10</div>
+        <div class="img-hover">
+            <div class="img-child">
+                <img src="https://mobirise.com/extensions/cryptom5/trade-agency/assets/images/face2.jpg" alt="" width="100%" height="100%" style="border-radius: 50%;">
+                <i class="fa-solid fa-circle-check"></i>
+            </div>
+        </div>
+        <div class="contant">
+            <h3>Claude Banks</h3>
+            <p>2.1 BTC</p>
+        </div>
+</div>
+        <div class="item">
+            <div class="num">3</div>
+            <div class="img-hover">
+                <div class="img-child">
+                    <img src="https://mobirise.com/extensions/cryptom5/trade-agency/assets/images/face3.jpg" alt="" width="100%" height="100%" style="border-radius: 50%;">
+                    <i class="fa-solid fa-circle-check"></i>
+                </div>
+            </div>
+            <div class="contant">
+                <h3>Gayle Hicks</h3>
+                <p>3.2 BTC</p>
+            </div>
+    </div>
+    <div class="item">
+        <div class="num">7</div>
+        <div class="img-hover">
+            <div class="img-child">
+                <img src="https://mobirise.com/extensions/cryptom5/trade-agency/assets/images/face3.jpg" alt="" width="100%" height="100%" style="border-radius: 50%;">
+                <i class="fa-solid fa-circle-check"></i>
+            </div>
+        </div>
+        <div class="contant">
+            <h3>Gayle Hicks</h3>
+            <p>2.5 BTC</p>
+        </div>
+</div>
+<div class="item">
+    <div class="num">11</div>
+    <div class="img-hover">
+        <div class="img-child">
+            <img src="https://mobirise.com/extensions/cryptom5/trade-agency/assets/images/face3.jpg" alt="" width="100%" height="100%" style="border-radius: 50%;">
+            <i class="fa-solid fa-circle-check"></i>
+        </div>
+    </div>
+    <div class="contant">
+        <h3>Gayle Hicks</h3>
+        <p>2.0 BTC</p>
+    </div>
+</div>
+<div class="item">
+    <div class="num">4</div>
+    <div class="img-hover">
+        <div class="img-child">
+            <img src="https://mobirise.com/extensions/cryptom5/trade-agency/assets/images/face4.jpg" alt="" width="100%" height="100%" style="border-radius: 50%;">
+            <i class="fa-solid fa-circle-check"></i>
+        </div>
+    </div>
+    <div class="contant">
+        <h3>Franklin Greer</h3>
+        <p>3.1 BTC</p>
+    </div>
+</div>
+<div class="item">
+    <div class="num">8</div>
+    <div class="img-hover">
+        <div class="img-child">
+            <img src="https://mobirise.com/extensions/cryptom5/trade-agency/assets/images/face4.jpg" alt="" width="100%" height="100%" style="border-radius: 50%;">
+            <i class="fa-solid fa-circle-check"></i>
+        </div>
+    </div>
+    <div class="contant">
+        <h3>Franklin Greer</h3>
+        <p>2.3 BTC</p>
+    </div>
+</div>
+<div class="item">
+    <div class="num">12</div>
+    <div class="img-hover">
+        <div class="img-child">
+            <img src="https://mobirise.com/extensions/cryptom5/trade-agency/assets/images/face4.jpg" alt="" width="100%" height="100%" style="border-radius: 50%;">
+            <i class="fa-solid fa-circle-check"></i>
+        </div>
+    </div>
+    <div class="contant">
+        <h3>Franklin Greer</h3>
+        <p>1.9 BTC</p>
+    </div>
+</div>
+</div>
+</section>
+<section class="section-8">
+    <div class="topic">
+        <h1>View in Action</h1>
+    </div>
+    <div class="view">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor.</p>
+    </div>
+    <div class="card">
+        <img src="./1.jpg" alt="">
+        <a href="https://www.youtube.com/watch?v=JZk6T1TmIrs&pp=ygUGY3J5cHRv"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+</section>
+<section class="section-9">
+    <div class="topic">
+        <h1>Our Article</h1>
+        <hr>
+    </div>
+    <div class="box-5">
+        <div class="box-border">
+            <div class="article">
+                <img src="https://mobirise.com/extensions/cryptom5/trade-agency/assets/images/features1.jpg" alt="" class="img5">
+                <div class="how">
+                    <div class="img-hover">
+                        <div class="img-child">
+                            <img src="https://mobirise.com/extensions/cryptom5/trade-agency/assets/images/face1.jpg" alt=""  width="100%" height="100%" style="border-radius: 50%;">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="art">
+                <h3>Crypto Wallets</h3>
+            <p>Lorem ipsum dolor</p>
+            <a href="">Read more</a>
+            </div>
+        </div>
+        <div class="box-border">
+            <div class="article">
+                <img src="https://mobirise.com/extensions/cryptom5/trade-agency/assets/images/features2.jpg" alt="" class="img5">
+                <div class="how">
+                    <div class="img-hover">
+                        <div class="img-child">
+                            <img src="https://mobirise.com/extensions/cryptom5/trade-agency/assets/images/face2.jpg" alt=""  width="100%" height="100%" style="border-radius: 50%;">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="art">
+                <h3>Margin Trade</h3>
+            <p>Lorem ipsum dolor</p>
+            <a href="">Read more</a>
+            </div>
+        </div>
+        <div class="box-border">
+            <div class="article">
+                <img src="https://mobirise.com/extensions/cryptom5/trade-agency/assets/images/features3.jpg" alt="" class="img5">
+                <div class="how">
+                    <div class="img-hover">
+                        <div class="img-child">
+                            <img src="https://mobirise.com/extensions/cryptom5/trade-agency/assets/images/face3.jpg" alt=""  width="100%" height="100%" style="border-radius: 50%;">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="art">
+                <h3>Exchange</h3>
+            <p>Lorem ipsum dolor</p>
+            <a href="">Read more</a>
+            </div>
+        </div>
+        <div class="box-border">
+            <div class="article">
+                <img src="https://mobirise.com/extensions/cryptom5/trade-agency/assets/images/features4.jpg" alt="" class="img5">
+                <div class="how">
+                    <div class="img-hover">
+                        <div class="img-child">
+                            <img src="https://mobirise.com/extensions/cryptom5/trade-agency/assets/images/face4.jpg" alt=""  width="100%" height="100%" style="border-radius: 50%;">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="art">
+                <h3>Cryptocurrency</h3>
+            <p>Lorem ipsum dolor</p>
+            <a href="">Read more</a>
+            </div>
+        </div>
+        
+    </div>
+    
+</section> 
+<section class="section-10">
+    <div class="topic">
+        <h1>Our Clients</h1>
+        <hr>
+        <div class="clients_2">
+            <div class="cli">
+                <img src="https://mobirise.com/extensions/cryptom5/trade-agency/assets/images/1.png" alt="">
+            </div>
+            <div class="cli">
+                <img src="https://mobirise.com/extensions/cryptom5/trade-agency/assets/images/2.png" alt="">
+            </div>
+            <div class="cli">
+                <img src="https://mobirise.com/extensions/cryptom5/trade-agency/assets/images/3.png" alt="">
+            </div>
+            <div class="cli">
+                <img src="https://mobirise.com/extensions/cryptom5/trade-agency/assets/images/4.png" alt="">
+            </div>
+            <div class="cli">
+                <img src="https://mobirise.com/extensions/cryptom5/trade-agency/assets/images/1.png" alt="">
+            </div>
+            <div class="cli">
+                <img src="https://mobirise.com/extensions/cryptom5/trade-agency/assets/images/2.png" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+<section class="Section-11">
+    <div class="hold">
+        <div class="hold-2">
+            <h2>Hold or Trade <br> Cryptocurrency</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed <br> eiusmod tempor incididunt labore dolore magna aliqua.</p>
+        </div>
+        <div class="hold-3">
+            <h3>Contact Us</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed eiusmod temp.</p>
+            <input type="text" placeholder="Your Name">
+            <input type="email" name="" id="" placeholder="Email">
+            <textarea name="message" id="" placeholder="Message"></textarea>
+            <button class="btn">Send Message</button>
+        </div>
+    </div>
+</section>
+<section class="section-12">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14690.40132458182!2d72.44371586192399!3d23.001719868757846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e9bc9351b0955%3A0x1c4faa48c7957c1a!2sShela%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1739450591327!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+<footer class="footer">
+    <h2>Crypto M5</h2>
+    <p>© Copyright 2025 Mobirise</p>
+    <div class="social">
+        <i class="fa-brands fa-twitter-square"></i>
+        <i class="fa-brands fa-facebook-square"></i>
+        <i class="fa-brands fa-youtube-square"></i>
+        <i class="fa-brands fa-instagram-square"></i>
+        <i class="fa-brands fa-square-x-twitter"></i>
+    </div>
+</footer>
 </body>
 </html>
